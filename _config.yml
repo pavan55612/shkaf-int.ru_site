@@ -10,7 +10,7 @@ plugins:
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
 bookshop_locations:
-  - ../components
+  - /vogue_site/components
 
 exclude:
   - postcss.config.js
@@ -30,15 +30,15 @@ collections_dir: 'collections'
 collections:
   pages:
     output: true
-    permalink: /:title/
+    permalink: /vogue_site/:title/
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /vogue_site/project/:slug
   testimonials:
     output: false
   posts:
     output: true
-    permalink: /blog/:slug
+    permalink: /vogue_site/blog/:slug
     
 cloudcannon:
   collections:
@@ -90,4 +90,4 @@ defaults:
 # Tags
 tag_page_dir: tag
 tag_page_layout: tag_page
-tag_permalink_style: /:title
+tag_permalink_style: /vogue_site/:title
