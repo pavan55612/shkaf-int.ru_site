@@ -1,1 +1,1 @@
-Sitemap: /vogue_site/sitemap.xml
+Sitemap: /sitemap.xml
