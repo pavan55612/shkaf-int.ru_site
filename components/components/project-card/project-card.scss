@@ -127,7 +127,7 @@
 
 	&__title, &__subtitle {
 		color: $white;
-		opacity: 0.5;
+		opacity: 0;
 		transition: transform .4s cubic-bezier(.165,.85,.45,1),opacity .4s cubic-bezier(.165,.85,.45,1);
 	}
 }
