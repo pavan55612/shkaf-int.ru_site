@@ -1,55 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>/about/</loc>
-<lastmod>2023-02-22T18:35:43+00:00</lastmod>
-</url>
-<url>
-<loc>/</loc>
-<lastmod>2023-02-22T18:35:43+00:00</lastmod>
-</url>
-<url>
-<loc>/price/</loc>
-<lastmod>2023-02-22T18:35:43+00:00</lastmod>
-</url>
-<url>
-<loc>/projects/</loc>
-<lastmod>2023-02-22T18:35:43+00:00</lastmod>
-</url>
-<url>
-<loc>/project/green-plant</loc>
-<lastmod>2021-01-05T02:20:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/antelope-anyon</loc>
-<lastmod>2021-01-06T02:20:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/quiet-lake</loc>
-<lastmod>2021-01-08T03:20:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/the-rocks</loc>
-<lastmod>2021-01-09T04:20:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/big-airplane</loc>
-<lastmod>2021-01-10T04:30:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/mountains</loc>
-<lastmod>2021-01-11T04:40:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/sea-and-rest</loc>
-<lastmod>2021-01-12T04:50:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/prague-city</loc>
-<lastmod>2021-01-14T05:00:35+00:00</lastmod>
-</url>
-<url>
-<loc>/project/desk-setup</loc>
-<lastmod>2021-01-15T05:20:35+00:00</lastmod>
-</url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+  <url>
+    <loc>https://shkaf-int.ru/</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/projects/</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/price/</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/about/</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/contacts/</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/guide/</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/about</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/projects</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/project/project_1.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/project/project_2.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/project/project_3.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/project/project_4.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/project/project_5.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/project/project_6.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/price/planning_solution.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/price/design_project.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shkaf-int.ru/price/architecture_design.html</loc>
+    <lastmod>2024-01-13T12:00:54+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
