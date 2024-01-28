@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://shkaf-int.ru/sitemap.xml
