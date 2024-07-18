@@ -220,24 +220,27 @@
                     <div class="c-contact-form__form-box">
                         <div class="c-contact-form__contact-head">
                             <h2 class="c-contact-form__contact-title">Форма обратно связт</h2>
-                            <p class="c-contact-form__contact-description">Оставьте свой вопрос и мы с Вами свяжемся!</p>
+                            <p class="c-contact-form__contact-description">Оставьте свой вопрос и мы с Вами свяжемся!
+                            </p>
                         </div>
-                        <form action="" class="c-contact-form__form" method="POST">
+                        <form action="https://api.web3forms.com/submit" class="c-contact-form__form" method="POST">
 
                             <div class="c-contact-form__form-group">
-                                <label class="c-contact-form__form-label screen-reader-text" for="form-name">Как к вам обращаться
+                                <label class="c-contact-form__form-label screen-reader-text" for="form-name">Как к вам
+                                    обращаться
                                 </label>
                                 <input class="c-contact-form__form-input" id="form-name" name="name"
                                     placeholder="Как к вам обращаться" required="" type="text">
                             </div>
                             <div class="c-contact-form__form-group">
-                                <label class="c-contact-form__form-label screen-reader-text"
-                                    for="form-email">Как с вами связаться</label>
+                                <label class="c-contact-form__form-label screen-reader-text" for="form-email">Как с вами
+                                    связаться</label>
                                 <input class="c-contact-form__form-input" id="form-email" name="_replyto"
                                     placeholder="Как с вами связаться" required="" type="email">
                             </div>
                             <div class="c-contact-form__form-group">
-                                <label class="c-contact-form__form-label screen-reader-text" for="form-text">Ваш вопрос...
+                                <label class="c-contact-form__form-label screen-reader-text" for="form-text">Ваш
+                                    вопрос...
                                 </label>
                                 <textarea class="c-contact-form__form-input" id="form-text" name="text"
                                     placeholder="Ваш вопрос..." required="" rows="9"></textarea>
@@ -246,8 +249,8 @@
                                 <button class="c-button c-button--primary c-button--large" type="submit">Отправить
                                 </button>
                             </div>
-                            <input name="_encrypted_details" type="hidden"
-                                value="ccdd41932fb80db17a04fbad0cc2ba2d93ebc5eac1cc4af0907cd96b">
+                            <input name="access_key" type="hidden" value="0510c8c3-05c0-4549-bed9-daeeb34573f3">
+                            <input type="hidden" name="redirect" value="https://shkaf-int.ru/contacts/">
                         </form>
                     </div>
 
@@ -260,20 +263,20 @@
 
         <!-- Replace with your Access Key -->
         <input type="hidden" name="access_key" value="0510c8c3-05c0-4549-bed9-daeeb34573f3">
-    
+
         <!-- Form Inputs. Each input must have a name="" attribute -->
         <input type="text" name="name" required>
         <input type="email" name="email" required>
         <textarea name="message" required></textarea>
-    
+
         <!-- Honeypot Spam Protection -->
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-    
+
         <!-- Custom Confirmation / Success Page -->
         <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
         <input type="hidden" name="redirect" value="https://shkaf-int.ru/contacts/">
         <button type="submit">Submit Form</button>
-    
+
     </form>
     <!-- end contact -->
     <!--bookshop-live end-->
