@@ -220,7 +220,7 @@
                     <div class="c-contact-form__form-box">
                         <div class="c-contact-form__contact-head">
                             <h2 class="c-contact-form__contact-title">Форма обратно связт</h2>
-                            <p class="c-contact-form__contact-description">Оставте свой вопрос и мы с Вами свяжемся!</p>
+                            <p class="c-contact-form__contact-description">Оставьте свой вопрос и мы с Вами свяжемся!</p>
                         </div>
                         <form action="" class="c-contact-form__form" method="POST">
 
@@ -255,6 +255,26 @@
             </div>
         </div>
     </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+        <button type="submit">Submit Form</button>
+    
+    </form>
     <!-- end contact -->
     <!--bookshop-live end-->
 
