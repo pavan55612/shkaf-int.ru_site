@@ -168,7 +168,7 @@
           <div class="container">
             <div class="row">
               <div class="col col-12">
-                
+
                 <div class="section__info">
                   <div class="section__head">
                     <!-- <h2 class="section__title">Наши проекты</h2> -->
@@ -481,6 +481,86 @@
           <li>Свыше трех комнат в квартире - рассчитывается индивидуально </li>
         </ul>
         <!-- КОНЕЦ БЛОК СТОИМОСТЬ  -->
+
+        <!-- СТОИМОСТЬ + ФОРМА ОБРАТНОЙ СВЯЗИ -->
+        <section class="c-hero animate">
+          <div class="container">
+            <div class="row">
+              <div class="col col-12">
+                <div class="c-hero__inner">
+
+                  <div class="c-hero__left">
+                    <h3 class="c-hero__title">Стоимость</h3>
+                    <div class="c-hero__description">
+                      <p>
+                      <ul>
+                        <li>Однокомнатная квартира (в том числе Студия) - 35 000₽ </li>
+                        <li>Двухкомнатные квартиры - 40 000₽ </li>
+                        <li>Трехкомнатные квартиры - 45 000₽ </li>
+                        <li>Свыше трех комнат в квартире - рассчитывается индивидуально </li>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- НАЧАЛО ФОРМА ОБРАТНОЙ СВЯЗИ -->
+
+                  <div class="c-contact-form" id="contact">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col col-12">
+
+                          <div class="c-contact-form__form-box">
+                            <div class="c-contact-form__contact-head">
+                              <h2 class="c-contact-form__contact-title">Форма обратной связи</h2>
+                              <p class="c-contact-form__contact-description">Оставьте свой вопрос и мы с Вами
+                                свяжемся!
+                              </p>
+                            </div>
+                            <form action="https://api.web3forms.com/submit" class="c-contact-form__form" method="POST">
+
+                              <div class="c-contact-form__form-group">
+                                <label class="c-contact-form__form-label screen-reader-text" for="form-name">Как к
+                                  вам
+                                  обращаться
+                                </label>
+                                <input class="c-contact-form__form-input" id="form-name" name="name"
+                                  placeholder="Как к вам обращаться" required="" type="text">
+                              </div>
+                              <div class="c-contact-form__form-group">
+                                <label class="c-contact-form__form-label screen-reader-text" for="form-text">Как с
+                                  вами
+                                  связаться</label>
+                                <input class="c-contact-form__form-input" id="form-text" name="_replyto"
+                                  placeholder="Как с вами связаться" required="" type="text">
+                              </div>
+                              <div class="c-contact-form__form-group">
+                                <label class="c-contact-form__form-label screen-reader-text" for="form-text">Ваш
+                                  вопрос...
+                                </label>
+                                <textarea class="c-contact-form__form-input" id="form-text" name="text"
+                                  placeholder="Ваш вопрос..." required="" rows="9"></textarea>
+                              </div>
+                              <div class="c-contact-form__form-group c-contact-form__form-group--button">
+                                <button class="c-button c-button--primary c-button--large" type="submit">Отправить
+                                </button>
+                              </div>
+                              <input name="access_key" type="hidden" value="0510c8c3-05c0-4549-bed9-daeeb34573f3">
+                              <input type="hidden" name="redirect" value="https://shkaf-int.ru/contacts/thanks.html">
+                            </form>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- КОНЕЦ ФОРМА ОБРАТНОЙ СВЯЗИ -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
       </div>
     </div>
