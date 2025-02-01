@@ -445,74 +445,18 @@
 
   <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
 
-  <!-- begin footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col col-12">
+<!-- begin footer -->
 
-          <!--bookshop-live name(social-link.jekyll.html) params() context() -->
-
-          <div class="social">
-            <ul class="social__list list-reset">
-
-              <li class="social__item">
-                <a class="social__link" href="https://www.instagram.com/KGladkova" target="_blank" rel="noopener"
-                  aria-label="instagram icon"><i><img src="/uploads/icon/icon-instagram.png"></i></a>
-              </li>
-
-              <li class="social__item">
-                <a class="social__link" href="https://t.me/+79879818400" target="_blank" rel="noopener"
-                  aria-label="telegram icon"><i><img src="/uploads/icon/icon-telegram.png"></i></a>
-              </li>
-
-              <li class="social__item">
-                <a class="social__link" href="https://wa.me/79879818400" target="_blank" rel="noopener"
-                  aria-label="whatsapp icon"><i><img src="/uploads/icon/icon-whatsapp.png"></i></a>
-              </li>
-
-            </ul>
-          </div>
-
-          <!--bookshop-live end-->
-
-          <ul class="footer_nav list-reset">
-
-            <li class="footer_nav__item">
-              <a href="/" class="footer_nav__link">ГЛАВНАЯ</a>
-            </li>
-
-            <li class="footer_nav__item">
-              <a href="/projects/" class="footer_nav__link">ПРОЕКТЫ</a>
-            </li>
-
-            <li class="footer_nav__item">
-              <a href="/price/" class="footer_nav__link">УСЛУГИ</a>
-            </li>
-
-            <li class="footer_nav__item">
-              <a href="/about/" class="footer_nav__link">О НАС</a>
-            </li>
-
-            <li class="footer_nav__item">
-              <a href="/contacts/" class="footer_nav__link">КОНТАКТЫ</a>
-            </li>
-
-            <li class="footer_nav__item">
-              <a href="/guide/" class="footer_nav__link">ГАЙД</a>
-            </li>
-
-          </ul>
-
-          <div class="copyright">
-            <p>Copyright©2020-2024. Ручками по шаблону Vonge</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- end footer -->
+<div id="footer"></div>
+<script>
+    fetch("/components/footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
+  
+<!-- end footer -->
 
   <!--
         load the live component for CloudCannon live previews.
