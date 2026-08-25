@@ -265,9 +265,61 @@
 /*# sourceMappingURL=main.css.map */
 
 /* ==========================================================
-   FIX: Lightense zoom inside project cards
+   LIGHTENSE — FIX ZOOMED IMAGES
    ========================================================== */
 
+/* Когда изображение открыто — убираем ограничения карточки */
 .c-project-card__content:has(.lightense-open) {
-  overflow: visible;
+  overflow: visible !important;
+  transform: none !important;
+}
+
+/* Lightense должен занимать весь экран */
+.lightense-wrap {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  z-index: 1000000 !important;
+
+  transform: none !important;
+}
+
+/* Само увеличенное изображение */
+.lightense-wrap .lightense-target {
+  position: relative !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  max-width: calc(100vw - 80px) !important;
+  max-height: calc(100vh - 80px) !important;
+
+  object-fit: contain !important;
+
+  margin: 0 !important;
+
+  transform: none !important;
+}
+
+/* Затемнение фона */
+.lightense-backdrop {
+  z-index: 999999 !important;
+}
+
+/* На телефонах оставляем больше места по краям */
+@media only screen and (max-width: 768px) {
+  .lightense-wrap .lightense-target {
+    max-width: calc(100vw - 30px) !important;
+    max-height: calc(100vh - 30px) !important;
+  }
 }
