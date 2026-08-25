@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* =======================
   // Zoom Image
-  ======================= */
+
   const lightense = document.querySelector(".page img, .post img"),
   imageLink = document.querySelectorAll(".page a img, .post a img");
 
@@ -75,6 +75,82 @@ document.addEventListener("DOMContentLoaded", function () {
     offset: 30
     });
   }
+  ======================= */
+
+  /* =======================
+ // Zoom Image
+ ======================= */
+
+const imageLinks = document.querySelectorAll(".page a img, .post a img");
+const zoomImages = document.querySelectorAll(".page img:not(.no-lightense), .post img:not(.no-lightense)");
+
+/* Не увеличиваем изображения, которые уже являются ссылками */
+imageLinks.forEach(function (img) {
+  img.parentNode.classList.add("image-link");
+  img.classList.add("no-lightense");
+});
+
+if (zoomImages.length) {
+
+  const lightbox = document.createElement("div");
+  lightbox.className = "custom-lightbox";
+
+  const lightboxImage = document.createElement("img");
+  lightboxImage.className = "custom-lightbox__image";
+
+  const closeButton = document.createElement("button");
+  closeButton.className = "custom-lightbox__close";
+  closeButton.type = "button";
+  closeButton.setAttribute("aria-label", "Закрыть");
+
+  closeButton.innerHTML = "&times;";
+
+  lightbox.appendChild(lightboxImage);
+  lightbox.appendChild(closeButton);
+  document.body.appendChild(lightbox);
+
+  function closeLightbox() {
+    lightbox.classList.remove("is-open");
+    document.body.classList.remove("lightbox-open");
+
+    setTimeout(function () {
+      lightboxImage.removeAttribute("src");
+    }, 250);
+  }
+
+  zoomImages.forEach(function (img) {
+
+    img.addEventListener("click", function (event) {
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      lightboxImage.src = img.currentSrc || img.src;
+
+      lightbox.classList.add("is-open");
+      document.body.classList.add("lightbox-open");
+    });
+
+  });
+
+  closeButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    closeLightbox();
+  });
+
+  lightbox.addEventListener("click", function (event) {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+      closeLightbox();
+    }
+  });
+}
+  
 
   /* ============================
   // Testimonials Slider
